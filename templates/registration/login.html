@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion</title>
+</head>
+<body>
+    <h3 >Application </h3>
+    <form action="" method="post">
+        {% csrf_token %}
+        <h2>Connexion</h2>
+        <label for="{{ form.username.id_for_label }}" >{{ form.username.label_tag }}</label><br>
+        <input type="text" name="{{ form.username.html_name }}" id="{{ form.username.id_for_label }}">
+        <label for="{{ form.password.id_for_label }}" >{{ form.password.label_tag }}</label><br>
+        <input type="password" name="{{ form.password.html_name }}" id="{{ form.password.id_for_label }}" >
+        <div >
+            <button type="submit" >Connexion</button>
+        </div>
+    </form>
+</body>
+</html>

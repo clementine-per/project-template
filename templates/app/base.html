@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+    {% block css %}{% endblock %}
+    <title>App</title>
+</head>
+<body>
+<div>
+    Ici c'est le header!
+</div>
+{% block content %}
+{% endblock %}
+<div>
+    Ici c'est le footer!
+</div>
+
+{% block script %}
+{% endblock %}
+
+</body>
+</html>
